@@ -7,8 +7,7 @@ const Genre = require('./models/genre');
 
 const data = require('./data.json');
 // Replace this with your MongoDB connection string
-const uri =
-'mongodb+srv://admin_1:80vJPUZdbqvqTMrS@cluster0.ubcgjdy.mongodb.net/local_library?retryWrites=true&w=majority';
+// const uri = add mongoDB connection string
 async function connectToDatabase() {
   try {
     await mongoose.connect(uri);
@@ -29,23 +28,6 @@ async function populateDatabase() {
 
     // Populate Genres
     const genres = await Genre.create(data.genres);
-
-    
-    // const authorIds = data.books.forEach(async (book) => {
-    //   // console.log(book)
-    //   // console.log(book.author)
-    //   console.log(data.authors[book.author].first_name)
-    //   console.log(data.authors[book.author].last_name)
-    //   const authors = await Author.find(
-    //     {$and:
-    //       [
-    //         { first_name: data.authors[book.author].first_name },
-    //         { last_name: data.authors[book.author].last_name }
-    //       ]
-    //     }).exec();
-    //     console.log(authors['_id']);
-    //     return authorIds;
-    //   });
 
       for (const bookData of data.books) {
         // console.log(bookData)
@@ -116,29 +98,6 @@ async function populateDatabase() {
 
       }
 
-    // // // Populate Books
-    // const books = data.books.map(book => ({
-    //   title: book.title,
-    //   summary: book.summary,
-    //   isbn: book.isbn,
-    //   author: authorIds[data.authors.findIndex(a => a.first_name === book.author.first_name && a.last_name === book.author.last_name)],
-    //   genres: book.genres.map(genreName => genreIds[data.genres.findIndex(g => g.name === genreName)]),
-    // }));
-
-    // books.forEach((book) => {
-    //   console.log(book)
-    // })
-    // await Book.create(books);
-
-    // // Populate BookInstances
-    // const bookInstances = data.bookInstances.map(instance => ({
-    //   book: books.find(book => book.title === data.books.find(b => b.title === instance.book.title).title)._id,
-    //   imprint: instance.imprint,
-    //   status: instance.status,
-    //   due_back: instance.due_back,
-    // }));
-    // await BookInstance.create(bookInstances);
-
     console.log('Database populated successfully!');
   } catch (error) {
     console.error('Error populating database:', error);
@@ -147,122 +106,6 @@ async function populateDatabase() {
     mongoose.connection.close();
   }
 }
-
-
-
-
-// async function populateDatabase() {
-//   try {
-//     const rawData = fs.readFileSync('data.json');
-//     const data = JSON.parse(rawData);
-//     // Create authors
-//     for (const authorData of data.authors) {
-//       const author = new Author(authorData);
-//       await author.save();
-//     }
-//     // Create genres
-//     for (const genreData of data.genres) {
-//       const genre = new Genre(genreData);
-//       await genre.save();
-//     }
-    
-//     console.log(data.genres[3])
-
-//     // Create books and book instances
-//     for (const bookData of data.books) {
-//       if (mongoose.connection.readyState !== 1) {
-//         console.error('MongoDB connection is not open');
-//         return;
-//       }
-      
-//       try {
-//         console.log('CREATING BOOK')
-//         console.log(data.authors[bookData.author].first_name)
-//         console.log(data.authors[bookData.author].last_name)
-//         console.log(data.genres[bookData.genres[0]].name)
-//         let authorId = '';
-//         const authors = await Author.find({
-//           $and: [{ first_name: data.authors[bookData.author].first_name }, { last_name: data.authors[bookData.author].last_name }],
-//         }).select('_id');
-
-//         const genres = [];
-//         for (const genreIndex of bookData.genres) {
-//           console.log(genreIndex)
-//           const genreId = await Genre.findOne({ name: `${data.genres[genreIndex]}` }).exec();
-//           console.log(genreId._id)
-//           if (genreId.length > 0) {
-//             genres.push(genreId[0]._id);
-//           }
-
-          
-//         }
-//           console.log(genres)
-  
-//         if (authors.length > 0 && genres.length > 0) {
-//           authorId = authors[0]._id;
-    
-//           const book = new Book({
-//             title: bookData.title,
-//             summary: bookData.summary,
-//             isbn: bookData.isbn,
-//             author: authorId,
-//             genre: genres,
-//           });
-          
-//           await book.save();
-
-//         } else {
-//           console.log('Author not found.');
-//         }
-//       } catch (error) {
-//         console.error('Error creating book:', error.message);
-//       }
-
-//     }
-//       console.log('Database populated successfully.');
-//       for ( const bookInstanceData of data.bookInstances) {
-//         if (mongoose.connection.readyState !== 1) {
-//           console.error('MongoDB connection is not open');
-//           return;
-//         }
-
-//         try {
-//           // console.log('CREATING BOOKINSTANCE')
-//           // console.log(data.books[bookInstanceData.book])
-
-//           const book = await Book.find(
-//             { isbn: data.books[bookInstanceData.book].isbn }
-//           ).select('_id');
-          
-//           if (book.length > 0) {
-//             const bookId = book[0]._id;
-      
-
-//           // console.log({book})
-
-//           const bookInstance = new BookInstance({
-//             book: bookId, 
-//             imprint: bookInstanceData.imprint,
-//             status: bookInstanceData.status,
-//             due_back: bookInstanceData.due_back
-//           })
-
-//           // console.log(bookInstance);
-
-//           await bookInstance.save();
-//         } else {
-//           console.log('Book not found.');
-//         }
-//         } catch (error) {
-//           console.error('Error creating book:', error.message);
-//         }
-//       }
-
-//   } catch (error) {
-//     console.error('Error populating the database:', error.message);
-//     throw error;
-//   }
-// }
 
 async function run() {
   try {
