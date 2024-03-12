@@ -1,0 +1,508 @@
+{
+  "authors": [
+    {
+      "first_name": "George",
+      "last_name": "Orwell",
+      "date_of_birth": "1903-06-25",
+      "date_of_death": "1950-01-21"
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Austen",
+      "date_of_birth": "1775-12-16",
+      "date_of_death": "1817-07-18"
+    },
+    {
+      "first_name": "Charles",
+      "last_name": "Dickens",
+      "date_of_birth": "1812-02-07",
+      "date_of_death": "1870-06-09"
+    },
+    {
+      "first_name": "J.K.",
+      "last_name": "Rowling",
+      "date_of_birth": "1965-07-31",
+      "date_of_death": null
+    }
+  ],
+  "genres": [
+    { "name": "Dystopian" },
+    { "name": "Romance" },
+    { "name": "Science Fiction" },
+    { "name": "Mystery" },
+    { "name": "Historical Fiction" },
+    { "name": "Thriller" },
+    { "name": "Fantasy" },
+    { "name": "Biography" },
+    { "name": "Horror" },
+    { "name": "Adventure" },
+    { "name": "Non-Fiction" },
+    { "name": "Children's" },
+    { "name": "Classics" },
+    { "name": "Poetry" },
+    { "name": "Contemporary" }
+  ],
+  "books": [
+    {
+      "title": "1984",
+      "summary": "A dystopian novel by George Orwell.",
+      "isbn": "9780141036144",
+      "author": 0,
+      "genres": [0, 2]
+    },
+    {
+      "title": "Pride and Prejudice",
+      "summary": "A romantic novel by Jane Austen.",
+      "isbn": "9780141439518",
+      "author": 1,
+      "genres": [1, 5]
+    },
+    {
+      "title": "Great Expectations",
+      "summary": "A coming-of-age novel by Charles Dickens.",
+      "isbn": "9780141439518",
+      "author": 2,
+      "genres": [3, 4]
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "summary": "The first book in the Harry Potter series.",
+      "isbn": "9780590353427",
+      "author": 3,
+      "genres": [2, 5]
+    },
+    {
+      "title": "Murder on the Orient Express",
+      "summary": "A classic mystery novel by Agatha Christie.",
+      "isbn": "9780061120085",
+      "author": 0,
+      "genres": [3, 7]
+    },
+    {
+      "title": "The Adventures of Tom Sawyer",
+      "summary": "An adventure novel by Mark Twain.",
+      "isbn": "9780141439556",
+      "author": 1,
+      "genres": [4, 9]
+    },
+    {
+      "title": "Mrs. Dalloway",
+      "summary": "A modernist novel by Virginia Woolf.",
+      "isbn": "9780141439556",
+      "author": 2,
+      "genres": [5, 13]
+    },
+    {
+      "title": "War and Peace",
+      "summary": "An epic novel by Leo Tolstoy.",
+      "isbn": "9780061120085",
+      "author": 3,
+      "genres": [6, 8]
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "summary": "A magical realist novel by Gabriel García Márquez.",
+      "isbn": "9780061120085",
+      "author": 0,
+      "genres": [8, 11]
+    },
+    {
+      "title": "Wuthering Heights",
+      "summary": "A Gothic novel by Emily Brontë.",
+      "isbn": "9780141439556",
+      "author": 1,
+      "genres": [4, 12]
+    },
+    {
+      "title": "The Great Gatsby",
+      "summary": "A Jazz Age novel by F. Scott Fitzgerald.",
+      "isbn": "9780451191144",
+      "author": 2,
+      "genres": [7]
+    },
+    {
+      "title": "Moby-Dick",
+      "summary": "A novel by Herman Melville.",
+      "isbn": "9780141439556",
+      "author": 3,
+      "genres": [6, 8]
+    },
+    {
+      "title": "Fahrenheit 451",
+      "summary": "A dystopian novel by Ray Bradbury.",
+      "isbn": "9780061120085",
+      "author": 0,
+      "genres": [0, 2]
+    },
+    {
+      "title": "Atlas Shrugged",
+      "summary": "A philosophical novel by Ayn Rand.",
+      "isbn": "9780451191144",
+      "author": 1,
+      "genres": [7]
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "summary": "A Southern Gothic novel by Harper Lee.",
+      "isbn": "9780061120085",
+      "author": 2,
+      "genres": [5, 13]
+    }
+  ],
+  "bookInstances": [
+    {
+      "book": 0,
+      "imprint": "Penguin Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 0,
+      "imprint": "Random Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 0,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 0,
+      "imprint": "Penguin Books",
+      "status": "Reserved",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 0,
+      "imprint": "Penguin Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 0,
+      "imprint": "Alan Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 1,
+      "imprint": "Random House",
+      "status": "Maintenance",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Penguin House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 1,
+      "imprint": "Random House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Harper Collins",
+      "status": "Loaned",
+      "due_back": "2023-11-05"
+    },
+    {
+      "book": 1,
+      "imprint": "Penguin Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 1,
+      "imprint": "Random Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 1,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 1,
+      "imprint": "Penguin Books",
+      "status": "Reserved",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 2,
+      "imprint": "Penguin Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 2,
+      "imprint": "Alan Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 2,
+      "imprint": "Random House",
+      "status": "Maintenance",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Penguin House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 2,
+      "imprint": "Random House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 3,
+      "imprint": "Scholastic",
+      "status": "Reserved",
+      "due_back": "2023-12-10"
+    },
+    {
+      "book": 3,
+      "imprint": "Penguin Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 3,
+      "imprint": "Random Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 3,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 3,
+      "imprint": "Penguin Books",
+      "status": "Reserved",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 3,
+      "imprint": "Penguin Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 3,
+      "imprint": "Alan Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 3,
+      "imprint": "Random House",
+      "status": "Maintenance",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 3,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 3,
+      "imprint": "Penguin House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 3,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 3,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 3,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 4,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 4,
+      "imprint": "Random House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 4,
+      "imprint": "Everyman's Library",
+      "status": "Available",
+      "due_back": "2023-11-20"
+    },
+    {
+      "book": 4,
+      "imprint": "Penguin Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 4,
+      "imprint": "Random Books",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 4,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 4,
+      "imprint": "Penguin Books",
+      "status": "Reserved",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 4,
+      "imprint": "Penguin Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 4,
+      "imprint": "Alan Books",
+      "status": "Loaned",
+      "due_back": "2023-11-15"
+    },
+    {
+      "book": 5,
+      "imprint": "Random House",
+      "status": "Maintenance",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Penguin House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Random House",
+      "status": "Available",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Penguin House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    },
+    {
+      "book": 5,
+      "imprint": "Random House",
+      "status": "Loaned",
+      "due_back": "2023-10-25"
+    }
+  ]
+}

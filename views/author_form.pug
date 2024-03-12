@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  h1 #{title}
+
+  form(method='POST')
+    div.form-group
+        h5 New Author
+        label(for='first_name') First Name:
+        input#first_name.form-control(type='text', placeholder='' name='first_name' required value=(undefined===author ? '' : author.first_name) )
+        label(for='last_name') Last Name:
+        input#last_name.form-control(type='text', placeholder='' name='last_name' required value=(undefined===author ? '' : author.last_name) )
+        label(for='birth_date') Date of Birth:
+        input#birth-date.form-control(type='date' name='birth_date' required value=(undefined===author ? '' : author.birth_date))
+        label(for='death_date') Date of Death:
+        input#death-date.form-control(type='date' name='death_date' value=(undefined===author ? '' : author.death_date))
+    button.btn.btn-primary(type='submit') Submit
+
+  if errors
+    div(class='error-list')
+      for error in errors
+        p(style='margin-top:1rem')!= error.msg

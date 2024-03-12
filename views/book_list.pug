@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= title
+  h3 Displaying the whole collection of books!
+
+  if book_list.length
+    table(class='book-list')
+      thead
+        tr
+          th Title</th>
+          th Author</th>
+          th ISBN</th>
+          th Status</th>
+      tbody
+        each book, index in book_list
+          tr
+            td
+              a(href=book.url) #{book.title}
+            td #{book.author.first_name} #{book.author.last_name}
+            td
+              strong #{book.isbn}
+            td
+              strong #{statuses[index]}
+  else
+    p There are no books.

@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+    h1 !{title}
+
+    if author_list.length
+        ul(class='other-list')
+            each val in author_list 
+                li 
+                    a(href=val.url) #{val.first_name} #{val.last_name} 
+                    | (#{val.formatted_date})
+    else 
+        p There are no authors

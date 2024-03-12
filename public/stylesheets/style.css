@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+a::before {
+  color: black;
+  text-decoration: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  width: 100vw;
+  height: 100vh;
+}
+/* Adjust the sidebar appearance */
+.sidebar-nav {
+  padding: 10px; /* Add padding for better spacing */
+  list-style: none;
+  background-color: #f8f9fa; /* Add a light background color */
+  border-right: 1px solid #dee2e6; /* Add a border to separate from content */
+  height: 100%;
+}
+
+.sidebar-nav a {
+  color: #495057;
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Add smooth transition for hover effect */
+}
+
+.sidebar-nav a:hover {
+  background-color: #e9ecef; /* Add a subtle hover effect */
+}
+
+/* Style the main content area */
+.col-sm-10 {
+  padding: 20px; /* Add padding for better spacing */
+  margin: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the footer (if applicable) */
+footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+/* Author view */
+.author-info {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.author-info h4 {
+  color: #007bff;
+}
+
+.author-info dl {
+  margin-top: 10px;
+}
+
+/* Book list view */
+.book-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.book-list th, .book-list td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+/* Home view */
+.dynamic-content {
+  margin-top: 20px;
+}
+
+.dynamic-content h1 {
+  color: #007bff;
+}
+
+.dynamic-content p {
+  margin-bottom: 10px;
+}
+
+.dynamic-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dynamic-content li {
+  margin-bottom: 5px;
+}
+
+book-instance-list {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Book instance view */
+.book-instance-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.book-instance-list li {
+  margin-bottom: 10px;
+  border: #495057 solid 1px;
+  padding: 1.5rem;
+  list-style: none;
+
+}
+
+.book-instance-list a {
+  color: #789cea;
+}
+
+.book-instance-list .text-success {
+  color: #7cdb92;
+}
+
+.book-instance-list .text-danger {
+  color: #ff2c41;
+}
+
+.book-instance-list .text-warning {
+  color: #ffd555;
+}
+
+
+
+other-list {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Book instance view */
+.other-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.other-list li {
+  margin-bottom: 10px;
+  border: #495057 solid 1px;
+  padding: 1.5rem;
+  list-style: none;
+
+}
+
+.error-list {
+  color: #ff2c41;
+  list-style: none;
+}

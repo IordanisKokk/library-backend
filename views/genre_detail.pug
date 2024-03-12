@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+
+    h1 !{title}
+
+    if books.length 
+        ul 
+            each val in books 
+                li 
+                    a(href=val.url) #{val.title}
+                    p #{val.summary} 
+    else 
+        p there are no #{genre.name} books!
